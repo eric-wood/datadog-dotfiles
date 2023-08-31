@@ -12,5 +12,5 @@ ZSH_TMUX_ITERM2=true
 plugins=(git tmux)
 
 source $ZSH/oh-my-zsh.sh
- ~/.config/dogweb.shellrc
+source ~/.config/dogweb.shellrc
 EOM
