@@ -7,6 +7,8 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 cat >> ~/.zshrc <<-EOM
 ZSH_THEME="nicoulaj"
+ZSH_TMUX_AUTOSTART=true
+ZSH_TMUX_ITERM2=true
 plugins=(git tmux)
 
 source $ZSH/oh-my-zsh.sh
