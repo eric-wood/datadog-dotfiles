@@ -16,4 +16,8 @@ source $ZSH/oh-my-zsh.sh
 alias psqlws='psql postgres://dog:dog@localhost:15433/dogdata'
 
 source ~/.config/dogweb.shellrc
+
+if [[ $- =~ i ]] && [[ -z "$TMUX" ]] && [[ -n "$SSH_TTY" ]]; then
+  tmux -CC attach-session -t ssh_tmux || tmux -CC new-session -s ssh_tmux
+fi
 EOM
